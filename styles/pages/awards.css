@@ -1,0 +1,53 @@
+.hero {
+    padding: var(--page-separation) var(--page-padding) 0;
+    text-align: center;
+}
+
+.hero > div {
+    background-image: url("/assets/images/awards.jpg");
+    height: 600px;
+    margin-top: 16px;
+}
+
+.awards {
+    padding: var(--page-separation) var(--page-padding) 0;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    column-gap: 80px;
+}
+
+.awards__title {
+    margin-bottom: 32px;
+}
+
+.awards__image-amusic {
+    background-image: url("/assets/images/amusic.webp");
+    height: 350px;
+}
+
+.awards__image-billmusic {
+    background-image: url("/assets/images/billmusic.jpg");
+    height: 900px;
+}
+
+.awards__image-djmagazine {
+    background-image: url("/assets/images/aviciidj.jpg");
+    height: 600px;
+}
+
+.awards__image-grammys {
+    background-image: url("/assets/images/grammys.webp");
+    height: 500px;
+}
+
+.nomination {
+    margin-bottom: 16px;
+}
+
+.nomination__title {
+    text-transform: none;
+}
+
+.nomination__result-success {
+    color: var(--primary-color);
+}

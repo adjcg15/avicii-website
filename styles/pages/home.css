@@ -1,0 +1,142 @@
+.hero {
+    height: calc(100vh - 97px);
+    background-image: url("/assets/images/hero.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero__content {
+    width: 100%;
+    height: 100%;
+    padding: 0 var(--page-padding);
+    background: rgba(0, 0, 0, 0.6);
+    position: relative;
+}
+
+.hero__title {
+    color: var(--white);
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.hero__scroller {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px;
+}
+
+.hero__scroller p {
+    color: var(--white);
+}
+
+.hero__scroller img {
+    animation: scroll-animation infinite 3s;
+}
+
+.about {
+    padding: var(--page-separation) var(--page-padding) 0;
+}
+
+.about__content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.about__pictures {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 600px;
+    column-gap: 40px;
+    margin-top: 40px;
+}
+
+.about__pictures > div:first-child {
+    background-image: url("/assets/images/portrait1.webp");
+}
+
+.about__pictures > div:last-child {
+    background-image: url("/assets/images/portrait2.jpg");
+}
+
+.about__pictures > div {
+    height: 100%;
+}
+
+.work {
+    padding: var(--page-separation) var(--page-padding) 0;
+    text-align: center;
+}
+
+.work__gallery {
+    margin-top: 32px;
+}
+
+.work__gallery-top {
+    height: 400px;
+    background-image: url("/assets/images/album-avicii.jpg");
+}
+
+.work__gallery-bottom {
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 32px;
+    height: 300px;
+}
+
+.work__gallery-bottom > .background-image:nth-child(1) {
+    background-image: url("/assets/images/album-true.jpg");
+}
+
+.work__gallery-bottom > .background-image:nth-child(2) {
+    background-image: url("/assets/images/album-stories.jpg");
+}
+
+.work__gallery-bottom > .background-image:nth-child(3) {
+    background-image: url("/assets/images/album-tim.jpg");
+}
+
+.work__album {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    flex-direction: column;
+    padding: 16px 24px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(0,0,0,1) 0%, rgba(255,255,255,0) 100%);
+}
+
+.work__album > * {
+    color: var(--white);
+}
+
+.memory {
+    padding: 180px var(--page-padding) 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+@keyframes scroll-animation {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+
+    30% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(20%);
+        opacity: 0;
+    }
+}

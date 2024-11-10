@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/globals.css">
+    <link rel="stylesheet" type="text/css" href="styles/pages/music.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sulphur+Point:wght@400;700&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/music.js"></script>
+    <title>La música de Avicii</title>
+</head>
+<body>
+    <header class="header">
+        <a href="/">
+            <img src="assets/images/logo.png" width="75px" height="45px">
+        </a>
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/musica.html" class="active">Música</a></li>
+                <li><a href="/bibliografia.html">Historia</a></li>
+                <li><a href="/premios.html">Premios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Más que música</h1>
+            <p>"Me siento afortunado todos los días cuando me despierto y soy capaz de hacer lo que me gusta."</p>
+        </section>
+
+        <section class="gallery">
+            <h2>Albums</h2>
+
+            <article class="album">
+                <div class="background-image album__cover album__cover--true"></div>
+                
+                <main>
+                    <p class="subtitle">2013</p>
+                    <h3 class="album__title">True</h3>
+
+                    <p>Con un total de 10 canciones, este es el primer album de Avicii y contó con la colaboración de otros 8 artistas. El álbum ha alcanzado un gran éxito comercial, ingresando en la lista de los diez más populares de al menos diez países.</p>
+                </main>
+            </article>
+
+            <article class="album">
+                <div class="background-image album__cover album__cover--stories"></div>
+                
+                <main>
+                    <p class="subtitle">2015</p>
+                    <h3 class="album__title">Stories</h3>
+
+                    <p>Con un total de 14 canciones, este es el segundo album de Avicii en colaboración con otros 11 artistas. Stories fue el cuarto álbum del año con mayor cantidad de streams en Spotify.</p>
+                </main>
+            </article>
+
+            <article class="album">
+                <div class="background-image album__cover album__cover--avici"></div>
+                
+                <main>
+                    <p class="subtitle">2017</p>
+                    <h3 class="album__title">Avici</h3>
+
+                    <p>Con un total de 6 canciones, este es el primer miniálbum de Avicii. Este trabajo mezcla canciones nuevas y viejas del artista, destacando entre estas primeras "Lonely Together" y "Without You".</p>
+                </main>
+            </article>
+
+            <article class="album">
+                <div class="background-image album__cover album__cover--tim"></div>
+                
+                <main>
+                    <p class="subtitle">2019</p>
+                    <h3 class="album__title">Tim</h3>
+
+                    <p>Con un total de 12 canciones, este es el último álbum de Avicii tras su muerte en 2018. Todas las regalías de las ventas de este trabajo se destinan a la Fundación Tim Bergling, creada para concienciarse acerca de la salud mental.</p>
+                </main>
+            </article>
+        </section>
+
+        <section class="music">
+            <h2>Canciones</h2>
+
+            <article class="song">
+                <main class="song__content">
+                    <div class="song__cover background-image song__cover--silhouettes"></div>
+                    
+                    <div>
+                        <h3>Silhouettes</h3>
+                        <p>Silhouettes &sdot; 2013</p>
+                    </div>
+                </main>
+
+                <footer>
+                    <p class="subtitle">3:32</p>
+
+                    <div>
+                        <button value="silhouettes" class="song__player">
+                            <div class="song__player-mask"></div>
+                            <img class="play" src="assets/icons/play.png" width="30px" height="30px" alt="play"/>
+                            <img class="pause" src="assets/icons/pause.png" width="30px" height="30px" alt="play"/>
+                        </button>
+                        <audio id="silhouettes" src="assets/mp3/silhouettes.mp3"></audio>
+                    </div>
+                </footer>
+            </article>
+
+            <article class="song">
+                <main class="song__content">
+                    <div class="song__cover background-image song__cover--stories"></div>
+                    
+                    <div>
+                        <h3>The Nights</h3>
+                        <p>Stories &sdot; 2015</p>
+                    </div>
+                </main>
+
+                <footer>
+                    <p class="subtitle">2:57</p>
+
+                    <div>
+                        <button value="the-nights" class="song__player">
+                            <div class="song__player-mask"></div>
+                            <img class="play" src="assets/icons/play.png" width="30px" height="30px" alt="play"/>
+                            <img class="pause" src="assets/icons/pause.png" width="30px" height="30px" alt="play"/>
+                        </button>
+                        <audio id="the-nights" src="assets/mp3/the-nights.mp3"></audio>
+                    </div>
+                </footer>
+            </article>
+
+            <article class="song">
+                <main class="song__content">
+                    <div class="song__cover background-image song__cover--stories"></div>
+                    
+                    <div>
+                        <h3>Waiting For Love</h3>
+                        <p>Stories &sdot; 2015</p>
+                    </div>
+                </main>
+
+                <footer>
+                    <p class="subtitle">3:51</p>
+
+                    <div>
+                        <button value="waiting-for-love" class="song__player">
+                            <div class="song__player-mask"></div>
+                            <img class="play" src="assets/icons/play.png" width="30px" height="30px" alt="play"/>
+                            <img class="pause" src="assets/icons/pause.png" width="30px" height="30px" alt="play"/>
+                        </button>
+                        <audio id="waiting-for-love" src="assets/mp3/waiting-for-love.mp3"></audio>
+                    </div>
+                </footer>
+            </article>
+
+            <article class="song">
+                <main class="song__content">
+                    <div class="song__cover background-image song__cover--true"></div>
+                    
+                    <div>
+                        <h3>Wake Me Up</h3>
+                        <p>True &sdot; 2013</p>
+                    </div>
+                </main>
+
+                <footer>
+                    <p class="subtitle">4:07</p>
+
+                    <div>
+                        <button value="wake-me-up" class="song__player">
+                            <div class="song__player-mask"></div>
+                            <img class="play" src="assets/icons/play.png" width="30px" height="30px" alt="play"/>
+                            <img class="pause" src="assets/icons/pause.png" width="30px" height="30px" alt="play"/>
+                        </button>
+                        <audio id="wake-me-up" src="assets/mp3/wake-me-up.mp3"></audio>
+                    </div>
+                </footer>
+            </article>
+
+            <article class="song">
+                <main class="song__content">
+                    <div class="song__cover background-image song__cover--true"></div>
+                    
+                    <div>
+                        <h3>Hey Brother</h3>
+                        <p>True &sdot; 2013</p>
+                    </div>
+                </main>
+
+                <footer>
+                    <p class="subtitle">4:15</p>
+
+                    <div>
+                        <button value="hey-brother" class="song__player">
+                            <div class="song__player-mask"></div>
+                            <img class="play" src="assets/icons/play.png" width="30px" height="30px" alt="play"/>
+                            <img class="pause" src="assets/icons/pause.png" width="30px" height="30px" alt="play"/>
+                        </button>
+                        <audio id="hey-brother" src="assets/mp3/hey-brother.mp3"></audio>
+                    </div>
+                </footer>
+            </article>
+
+            <article class="song">
+                <main class="song__content">
+                    <div class="song__cover background-image song__cover--levels"></div>
+                    
+                    <div>
+                        <h3>Levels</h3>
+                        <p>Levels &sdot; 2011</p>
+                    </div>
+                </main>
+
+                <footer>
+                    <p class="subtitle">3:20</p>
+
+                    <div>
+                        <button value="levels" class="song__player">
+                            <div class="song__player-mask"></div>
+                            <img class="play" src="assets/icons/play.png" width="30px" height="30px" alt="play"/>
+                            <img class="pause" src="assets/icons/pause.png" width="30px" height="30px" alt="play"/>
+                        </button>
+                        <audio id="levels" src="assets/mp3/levels.mp3"></audio>
+                    </div>
+                </footer>
+            </article>
+
+            <article class="song">
+                <main class="song__content">
+                    <div class="song__cover background-image song__cover--avici"></div>
+                    
+                    <div>
+                        <h3>Without You</h3>
+                        <p>AVICI &sdot; 2017</p>
+                    </div>
+                </main>
+
+                <footer>
+                    <p class="subtitle">3:02</p>
+
+                    <div>
+                        <button value="without-you" class="song__player">
+                            <div class="song__player-mask"></div>
+                            <img class="play" src="assets/icons/play.png" width="30px" height="30px" alt="play"/>
+                            <img class="pause" src="assets/icons/pause.png" width="30px" height="30px" alt="play"/>
+                        </button>
+                        <audio id="without-you" src="assets/mp3/without-you.mp3"></audio>
+                    </div>
+                </footer>
+            </article>
+
+            <article class="song">
+                <main class="song__content">
+                    <div class="song__cover background-image song__cover--tim"></div>
+                    
+                    <div>
+                        <h3>SOS</h3>
+                        <p>Tim &sdot; 2018</p>
+                    </div>
+                </main>
+
+                <footer>
+                    <p class="subtitle">2:37</p>
+
+                    <div>
+                        <button value="sos" class="song__player">
+                            <div class="song__player-mask"></div>
+                            <img class="play" src="assets/icons/play.png" width="30px" height="30px" alt="play"/>
+                            <img class="pause" src="assets/icons/pause.png" width="30px" height="30px" alt="play"/>
+                        </button>
+                        <audio id="sos" src="assets/mp3/sos.mp3"></audio>
+                    </div>
+                </footer>
+            </article>
+
+            <article class="song">
+                <main class="song__content">
+                    <div class="song__cover background-image song__cover--true"></div>
+                    
+                    <div>
+                        <h3>You make me</h3>
+                        <p>True &sdot; 2013</p>
+                    </div>
+                </main>
+
+                <footer>
+                    <p class="subtitle">3:53</p>
+
+                    <div>
+                        <button value="you-make-me" class="song__player">
+                            <div class="song__player-mask"></div>
+                            <img class="play" src="assets/icons/play.png" width="30px" height="30px" alt="play"/>
+                            <img class="pause" src="assets/icons/pause.png" width="30px" height="30px" alt="play"/>
+                        </button>
+                        <audio id="you-make-me" src="assets/mp3/you-make-me.mp3"></audio>
+                    </div>
+                </footer>
+            </article>
+
+            <article class="song">
+                <main class="song__content">
+                    <div class="song__cover background-image song__cover--true"></div>
+                    
+                    <div>
+                        <h3>Addicted to You</h3>
+                        <p>True &sdot; 2013</p>
+                    </div>
+                </main>
+
+                <footer>
+                    <p class="subtitle">2:28</p>
+
+                    <div>
+                        <button value="addicted-to-you" class="song__player">
+                            <div class="song__player-mask"></div>
+                            <img class="play" src="assets/icons/play.png" width="30px" height="30px" alt="play"/>
+                            <img class="pause" src="assets/icons/pause.png" width="30px" height="30px" alt="play"/>
+                        </button>
+                        <audio id="addicted-to-you" src="assets/mp3/addicted-to-you.mp3"></audio>
+                    </div>
+                </footer>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+        <div class="footer__links">
+            <a href="/">
+                <img src="assets/images/logo.png" width="50px" height="30px">
+            </a>
+    
+            <nav>
+                <ul class="navbar">
+                    <li><a href="/">Inicio</a></li>
+                    <li><a href="/musica.html" class="active">Música</a></li>
+                    <li><a href="/bibliografia.html">Historia</a></li>
+                    <li><a href="/premios.html">Premios</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <hr>
+
+        <p><small>&#169; Avicii, 2024</small></p>
+    </footer>
+</body>
+</html>

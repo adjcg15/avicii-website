@@ -1,0 +1,153 @@
+.hero {
+    padding: var(--page-separation) var(--page-padding) 0;
+    text-align: center;
+}
+
+.gallery {
+    padding: var(--page-separation) var(--page-padding) 0;
+}
+
+.album {
+    display:  grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 120px;
+    margin-top: 40px;
+}
+
+.album__cover {
+    height: 400px;
+}
+
+.album__cover--true {
+    background-image: url("/assets/images/album-true.jpg");
+}
+
+.album__cover--stories {
+    background-image: url("/assets/images/album-stories.jpg");
+}
+
+.album__cover--avici {
+    background-image: url("/assets/images/album-avicii.jpg");
+}
+
+.album__cover--tim {
+    background-image: url("/assets/images/album-tim.jpg");
+}
+
+.album__title {
+    margin-bottom: 16px;
+}
+
+.music {
+    padding: var(--page-separation) var(--page-padding) 0;
+}
+
+.song {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--black);
+    margin-top: 24px;
+    padding-right: 32px;
+}
+
+.song p, .song h3 {
+    color: var(--white);
+    text-transform: none;
+}
+
+.song h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.song footer {
+    display: flex;
+    align-items: center;
+}
+
+.song__content {
+    display: flex;
+    align-items: center;
+}
+
+.song__cover {
+    width: 100px;
+    height: 100px;
+    margin-right: 24px;
+}
+
+.song__player {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    margin-left: 24px;
+    transition: 0.2s ease-in-out;
+    position: relative;
+    background: none;
+    background: transparent;
+}
+
+.song__player-mask {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: calc(100% - 9px);
+    height: calc(100% - 9px);
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+.song__player:hover > .song__player-mask {
+    background-color: var(--dark-primary-color);
+}
+
+.song__player img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.song__player img.play {
+    margin-left: 2px;
+    visibility: visible;
+}
+
+.song__player.isPlaying img.play {
+    visibility: hidden;
+}
+
+.song__player.isPlaying img.pause {
+    visibility: visible;
+}
+ 
+.song__cover--stories {
+    background-image: url("/assets/images/album-stories-small.jpg");
+}
+
+.song__cover--true {
+    background-image: url("/assets/images/album-true-small.jpg");
+}
+
+.song__cover--levels {
+    background-image: url("/assets/images/album-levels-small.jpg");
+}
+
+.song__cover--avici {
+    background-image: url("/assets/images/album-avicii-small.jpg");
+}
+
+.song__cover--tim {
+    background-image: url("/assets/images/album-tim-small.jpg");
+}
+
+.song__cover--silhouettes {
+    background-image: url("/assets/images/album-silhouettes-small.jpg");
+}
